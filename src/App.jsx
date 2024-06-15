@@ -1,8 +1,15 @@
 import React from 'react'
+import LoadParent from './components/Loading/LoadParent'
+import Home from './components/Landing/Home'
+
 
 const App = () => {
   return (
-    <h1 className='text-3xl font-bold underline'>App</h1>
+    <div className='h-screen bg-[#111]'>
+      
+      <LoadParent />
+      <Home/>
+    </div>
   )
 }
 
