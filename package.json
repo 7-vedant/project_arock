@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@jdion/tilt-react": "^1.0.0",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remixicon": "^4.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: a4;
+    src: url(./assets/Font/a4.woff2);
+}
+@font-face {
+    font-family: u4;
+    src: url(./assets/Font/u4.woff2);
+}
+
+@font-face {
+    font-family: u7;
+    src: url(./assets/Font/u7.woff2);
+}
+
+@font-face {
+    font-family: u8;
+    src: url(./assets/Font/u8.woff2);
+}
+
+span{
+    display: inline-block;
+}

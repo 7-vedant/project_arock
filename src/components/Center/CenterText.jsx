@@ -4,7 +4,7 @@ import SubHeading from './SubHeading'
 
 const CenterText = () => {
   return (
-    <div className='text-center absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%]'>
+    <div className='absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%]'>
         <HeroText />
         <SubHeading/>
     </div>

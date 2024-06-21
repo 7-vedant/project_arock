@@ -6,22 +6,35 @@ import gsap from 'gsap'
 
 const Home = () => {
 
-    const homeref = useRef(null)
+    const homeref = useRef(null);
+    const pageref = useRef(null);
 
     
     useGSAP(()=>{
-        gsap.from(homeref.current,{
+        gsap.to(homeref.current,{
+            y:'-100%',
+            delay:1.9,
+            duration:1
+        })
+        gsap.from(pageref.current,{
             opacity:0,
-            delay:2,
-            duration:0.5
+            delay:1.8,
+            duration:1,
+            y:50,
+            scale:1.05
         })
     })
     
   return (
-    <main ref={homeref} className='text-white w-full h-screen bg-cover bg-center bg-[url(/bg.webp)]' >
-      <NavBar/>
-      <CenterText/>
-    </main>
+    <div >
+        <div ref={homeref} className='h-screen bg-[#111] w-full z-10 fixed'>
+
+        </div>
+        <div ref={pageref} className='text-white w-full h-screen bg-cover bg-center bg-[url(/bg.webp)]' >
+            <NavBar/>
+            <CenterText/>
+        </div>
+    </div>
   )
 }
 
