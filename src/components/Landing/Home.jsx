@@ -4,7 +4,7 @@ import CenterText from '../Center/CenterText'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
-const Home = () => {
+const Home = (props) => {
 
     const homeref = useRef(null);
     const pageref = useRef(null);
@@ -31,7 +31,7 @@ const Home = () => {
 
         </div>
         <div ref={pageref} className='text-white w-full h-screen bg-cover bg-center bg-[url(/bg.webp)]' >
-            <NavBar/>
+            <NavBar menuOpen={props.menuOpen} setMenuOpen={props.setMenuOpen} />
             <CenterText/>
         </div>
     </div>
